@@ -14,7 +14,6 @@ class Creature(ABC):
         return f"{self.name} is a {self.type} type Creature"
 
 
-# 🔥 Fire family
 class Flameling(Creature):
     def __init__(self) -> None:
         super().__init__("Flameling", "Fire")
@@ -31,7 +30,6 @@ class Pyrodon(Creature):
         return "Pyrodon uses Flamethrower!"
 
 
-# 💧 Water family
 class Aquabub(Creature):
     def __init__(self) -> None:
         super().__init__("Aquabub", "Water")

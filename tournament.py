@@ -1,6 +1,3 @@
-from ex2.exceptions import InvalidStrategyError
-
-
 def format_opponents(opponents):
     formatted = []
     for f_name, _, s_name, _ in opponents:
@@ -30,7 +27,7 @@ def battle(opponents):
                 strategy1.act(c1)
                 strategy2.act(c2)
 
-    except InvalidStrategyError as e:
+    except Exception as e:
         print(
             "Battle error, aborting tournament:",
             e
